@@ -99,7 +99,7 @@ body {
 
 }
 
-h1, h2 {
+h1, .title span {
   text-transform: uppercase;
   color: white;
   font-size: 90px;
@@ -113,15 +113,16 @@ h1 {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-	h1, h2 {
+	h1, .title span {
 		font-size: 64px;
 	}
-	h2 {
+	.title span {
 		max-width: 90%;
 	}
 }
 
-h2 {
+.title span {
+	display: block;
 	align-self: flex-end;
 	margin-top: 0px;
 	margin-left: auto;
@@ -212,7 +213,7 @@ h2 {
   }
 }
 
-.athlets h3 {
+.athlets h2 {
 	font-size: 80px;
 	font-weight: 700;
 	line-height: 60px;
@@ -226,7 +227,7 @@ h2 {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-	.athlets h3 {
+	.athlets h2 {
 		margin-top: 1rem;
 		width: 20%;
 	}
@@ -263,7 +264,7 @@ ol {
 	
 }*/
 
-h4 {
+h3 {
 	color: #c1c1c1;
 	font-size: 36px;
 	font-weight: 700;
@@ -271,14 +272,14 @@ h4 {
     margin: 0;
 }
 
-h4 span {
+h3 span {
 	position: relative;
 	font-size: 0.9rem;
 	color: #000000;
 	vertical-align: top;
 }
 
-h4 span::after {
+h3 span::after {
 	position: absolute;
 	background-color: #5e42b0;
 	content: "";
@@ -322,7 +323,7 @@ p {
 	margin-right: auto; 
 }*/
     
-.players h3 {
+.players h2 {
 	align-self: flex-start;
 	font-size: 80px;
 	font-weight: 700;
@@ -430,7 +431,7 @@ p {
 	justify-content: center;
 }
 
-.next_step h3 {
+.next_step h2 {
 	margin: 0 130px;
 	font-size: 80px;
 	color: #c1c1c1;
@@ -521,13 +522,13 @@ p {
 	margin-left: 35px;
 }
 
-.footer h2 {
+.footer h1 {
 	margin-bottom: 0;
 }
 
 .footer p {
 	font-size: 30px;
-	color: #a496ca;
+	color: #a496cgita;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-top: 0;

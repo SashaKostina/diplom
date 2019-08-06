@@ -211,7 +211,6 @@ h1 {
 	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/footballer_566.png");
     background-repeat: no-repeat;
     left: 215px;*/
-    height: 940px;
     width: 50%;
   }
 }
@@ -227,13 +226,24 @@ h1 {
 	margin-left: auto;
 	box-sizing: border-box;
 	margin-bottom: 0;
-	width: 45%
+	width: 40%
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets h2 {
 		margin-top: 1rem;
-		width: 20%;
+		width: 50%;
+		align-self: flex-start;
+	}
+	.athlets_pic {
+		width: 50%;
+		margin-right: auto;
+	}
+	.athlets {
+		flex-direction: row;
+	}
+	ol {
+		margin-right: 25px;
 	}
 }
 
@@ -368,11 +378,8 @@ p {
 	background: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/basketballer_991.png");
 	background-repeat: no-repeat;
 	background-position: right;*/
-	width: 50%;
-	height: 940px;
+	width: 70%;
 	right: 0;
-	
-
 }
 
 .next_step {
@@ -394,7 +401,7 @@ p {
 	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/be-active_1024.jpg");
 	background-repeat: no-repeat;
 	/*background-position: left;*/
-	width: 100%;
+	width: 50%;
 	min-height: 730px;
 }
 
@@ -464,18 +471,28 @@ p {
 
 
 .find_contact_pic {
-	background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/find-contact_1024.jpg");
-	background-repeat: no-repeat;
+	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/find-contact_1024.jpg");
+	background-repeat: no-repeat;*/
 	width: 50%;
 	min-height: 730px;
-	
 }
 
+
+.find_contact_pic picture, .find_contact_pic img {
+	width: 100%;
+}
+
+
+
 .work_it_pic {
-	background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/work-it_1024.jpg");
-	background-repeat: no-repeat;
+	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/work-it_1024.jpg");
+	background-repeat: no-repeat;*/
 	width: 50%;
 	min-height: 730px;
+}
+
+.work_it_pic picture, .work_it_pic img {
+	width: 100%;
 }
 
 .footer {

@@ -1,12 +1,12 @@
 @font-face {
-  src: url(https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Regular.woff);
+  src: url(https://github.com/SashaKostina/diplom/blob/master/fonts/OpenSans-Regular.woff);
   font-family: OpenSans;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  src: url(https://github.com/netology-code/mq-diploma/blob/master/sources/fonts/OpenSans-Bold.woff);
+  src: url(https://github.com/SashaKostina/diplom/blob/master/fonts/OpenSans-Bold.woff);
   font-family: OpenSans;
   font-weight: 700;
   font-style: normal;
@@ -29,7 +29,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_1920.jpg");
+	background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/football_1920.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-color: white;
@@ -41,9 +41,15 @@ body {
 	color: white;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 960px) {
 	.header {
-		background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/football_767.jpg");
+		background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/football_1280.jpg");
+	}
+}
+
+@media (max-width: 640px) {
+	.header {
+		background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/football_767.jpg");
 	}
 }
 	
@@ -78,13 +84,19 @@ body {
 	height: 2.6rem /*52px*/;
 	align-self: center;
 	fill: #ffffff;
-  		
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
 	.logo__text {
 		width: 200px;
 		height: 50px;
+	}
+}
+
+@media (max-width: 640px) {
+	.logo_text {
+		width: 6.5rem;
+		height: 1.75rem;
 	}
 }
 
@@ -129,6 +141,16 @@ h1 {
 	align-self: flex-end;
 	margin-top: 0px;
 	margin-left: auto;
+}
+
+@media (max-width: 640px) {
+	h1, .title span {
+		font-size: 28px;
+	}
+	.title span {
+		margin-left: 64px;
+		width: 90%;
+	}
 }
 
 .buttons {
@@ -179,6 +201,24 @@ h1 {
 	font-weight: 400;
 	text-transform: uppercase;
 	margin: 1.3rem;
+}
+
+@media (max-width: 640px) {
+	.button_text {
+		font-size: 8px;
+	}
+	.buttons {
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 80%;
+	}
+	.button__gg, .button__app {
+		width: 100%;
+	}
+	.icon {
+		width: 23px;
+		height: 18px;
+	}
 }
 
 .athlets, .players {
@@ -350,12 +390,22 @@ p {
 	margin-left: 190px;
 }
 
+
 .players article {
 	width: 40%;
 	margin-left: 190px;
 	padding: 0;
 	margin-top: 60px;
 	margin-bottom: 60px;
+}
+@media (min-width: 641px) and (max-width: 960px) {
+	.players h2 {
+		margin-left: 20px;
+	}
+	.players article {
+		margin-left: 20px;
+		width: 50%;
+	}
 }
 
 .players .growth {
@@ -389,6 +439,8 @@ p {
 	width: 100%;
 }
 
+
+
 .be_active, .find_contact, .work_it {
 	display: flex;
 	flex-direction: row;
@@ -402,11 +454,22 @@ p {
 	background-repeat: no-repeat;
 	/*background-position: left;*/
 	width: 50%;
-	min-height: 730px;
+	font-size: 0;
 }
 
 .be_active_pic picture, .be_active_pic img {
 	width: 100%;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.next_step {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+	.be_active, .find_contact, .work_it {
+	  flex-direction: column;
+	}
 }
 
 .number {
@@ -426,6 +489,16 @@ p {
     left: 50%;
     margin-left: -50px;
 }
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.number {
+		width: 5.75rem;
+		height: 5.75rem;
+		margin-top: 25rem;
+		left: 1.75rem;
+		margin-left: 0;
+	}
+
 
 .number span {
 	/*margin-top: calc(7.75rem/2 - 1rem);*/
@@ -448,9 +521,14 @@ p {
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 50%;
-	min-height: 730px;
 	/*margin-left: calc(-8.5rem/2);*/
 	justify-content: center;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.be_active article, .work_it article, .find_contact article {
+		width: 100%;
+	}
 }
 
 .next_step h2 {
@@ -474,25 +552,40 @@ p {
 	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/find-contact_1024.jpg");
 	background-repeat: no-repeat;*/
 	width: 50%;
-	min-height: 730px;
+	font-size: 0;
 }
-
 
 .find_contact_pic picture, .find_contact_pic img {
 	width: 100%;
 }
 
-
+@media (min-width: 641px) and (max-width: 960px) {
+	.find_contact_pic {
+		order: -1;
+	}
+}
 
 .work_it_pic {
 	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/work-it_1024.jpg");
 	background-repeat: no-repeat;*/
 	width: 50%;
-	min-height: 730px;
+	font-size: 0;
 }
 
 .work_it_pic picture, .work_it_pic img {
 	width: 100%;
+}
+@media (min-width: 641px) and (max-width: 960px) {
+	.be_active_pic, .find_contact_pic, .work_it_pic {
+	  width: 100%;
+	 }
+	.next_step p {
+		margin-top: 2rem;
+		margin-bottom: 5rem;
+	}
+	.next_step h2 {
+		margin-top: 4.5rem;
+	}
 }
 
 .footer {
@@ -501,16 +594,21 @@ p {
 	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
-	background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_1280.jpg");
+	background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/game_1920.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-color: white;
 	background-size: cover;
-	width: 100%;
 	position: relative;
 	min-height: 100vh;
 	z-index: 1;
 	color: white;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.footer {
+		background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/game_1280.jpg");
+	}
 }
 
 .footer::after {
@@ -532,6 +630,11 @@ p {
 	justify-content: center;
 	align-items: center;
 	margin-top: auto;
+}
+@media (min-width: 641px) and (max-width: 960px) {
+	.footer_main {
+		margin-top: 6rem;
+	}
 }
 
 .logo {
@@ -555,6 +658,19 @@ p {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	margin-left: 35px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+	.text_footer {
+		margin: auto;
+	}
+    .footer h2 {
+    	font-size: 80px;
+    }
+    .footer p {
+    	font-size: 36px;
+    }
+
 }
 
 .footer h2 {

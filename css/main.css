@@ -66,15 +66,6 @@ body {
   z-index: -1;
 }
 
-
-
-/*.logo__icon  {
-	width: 9.5rem /*190px*//*;
-	height: 2.6rem /*52px;
-	align-self: center;
-	fill: #ffffff;
-}*/
-
 .logo__text {
 	text-decoration: none;
     text-transform: uppercase;
@@ -245,16 +236,10 @@ h1 {
 
 @media (min-width: 961px) {
 .athlets_pic {
-	/*content: "";*/
 	position: absolute;
-	
-	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/footballer_566.png");
-    background-repeat: no-repeat;
-    left: 215px;*/
-    width: 50%;
+	width: 50%;
   }
 }
-
 
 .athlets h2 {
 	font-size: 80px;
@@ -295,13 +280,11 @@ ol {
 	list-style-type: none;
 	width: 100%;
 	padding-left: 0;
-
 }
 
 .collaboration, .growth, .connection {
 	display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     min-height: 220px;
     width: 100%;
     margin-left: auto;
@@ -311,12 +294,6 @@ ol {
 	background: #ffffff;
 	    
 }
-
-/*.connection_article {
-    display: flex;
-    flex-direction: column;
-	
-}*/
 
 h3 {
 	color: #c1c1c1;
@@ -349,7 +326,6 @@ p {
 	align-self: center;
 	margin-top: 1.5rem;
 	margin-bottom: 0;
-
 }
 
 .collaboration {
@@ -373,10 +349,7 @@ p {
 	background-color: #efefef;
 }
 
-/*.players {
-	margin-right: auto; 
-}*/
-    
+
 .players h2 {
 	align-self: flex-start;
 	font-size: 80px;
@@ -398,6 +371,7 @@ p {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
+
 @media (min-width: 641px) and (max-width: 960px) {
 	.players h2 {
 		margin-left: 20px;
@@ -423,11 +397,6 @@ p {
 
 .players_pic {
 	position: absolute;
-	/*z-index: 1;
-	content: "";
-	background: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/basketballer_991.png");
-	background-repeat: no-repeat;
-	background-position: right;*/
 	width: 70%;
 	right: 0;
 }
@@ -439,20 +408,14 @@ p {
 	width: 100%;
 }
 
-
-
 .be_active, .find_contact, .work_it {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	position: relative;
-
 }
 
 .be_active_pic {
-	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/be-active_1024.jpg");
-	background-repeat: no-repeat;
-	/*background-position: left;*/
 	width: 50%;
 	font-size: 0;
 }
@@ -477,7 +440,6 @@ p {
 	width: 8.5rem;
 	height: 7.75rem;
 	margin-top: 10.5rem;
-	/*margin-left: calc(-8.5rem/2);*/
 	background-color: #5e42b0;
 	color: #f5f6f7;
 	display: flex;
@@ -498,11 +460,10 @@ p {
 		left: 1.75rem;
 		margin-left: 0;
 	}
-
+}
 
 .number span {
-	/*margin-top: calc(7.75rem/2 - 1rem);*/
-    margin: auto;	
+	margin: auto;	
     position: relative;
 }
 
@@ -521,7 +482,6 @@ p {
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 50%;
-	/*margin-left: calc(-8.5rem/2);*/
 	justify-content: center;
 }
 
@@ -546,11 +506,7 @@ p {
 	margin-top: 4.5rem;
 }
 
-
-
 .find_contact_pic {
-	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/find-contact_1024.jpg");
-	background-repeat: no-repeat;*/
 	width: 50%;
 	font-size: 0;
 }
@@ -566,8 +522,6 @@ p {
 }
 
 .work_it_pic {
-	/*background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/work-it_1024.jpg");
-	background-repeat: no-repeat;*/
 	width: 50%;
 	font-size: 0;
 }
@@ -575,14 +529,17 @@ p {
 .work_it_pic picture, .work_it_pic img {
 	width: 100%;
 }
+
 @media (min-width: 641px) and (max-width: 960px) {
 	.be_active_pic, .find_contact_pic, .work_it_pic {
 	  width: 100%;
 	 }
+
 	.next_step p {
 		margin-top: 2rem;
 		margin-bottom: 5rem;
 	}
+
 	.next_step h2 {
 		margin-top: 4.5rem;
 	}

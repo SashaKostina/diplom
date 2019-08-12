@@ -6,23 +6,51 @@
 }
 
 @font-face {
+  src: url(https://github.com/SashaKostina/diplom/blob/master/fonts/OpenSans-Regular.ttf);
+  font-family: OpenSans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(https://github.com/SashaKostina/diplom/blob/master/fonts/OpenSans-Regular.woff2);
+  font-family: OpenSans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   src: url(https://github.com/SashaKostina/diplom/blob/master/fonts/OpenSans-Bold.woff);
   font-family: OpenSans;
   font-weight: 700;
   font-style: normal;
 }
 
+@font-face {
+  src: url(https://github.com/SashaKostina/diplom/blob/master/fonts/OpenSans-Bold.ttf);
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(https://github.com/SashaKostina/diplom/blob/master/fonts/OpenSans-Bold.woff2);
+  font-family: OpenSans;
+  font-weight: 700;
+  font-style: normal;
+}
+
 html {
-	font-size: 125%
+  font-size: 125%
 }
 
 body {
-	font-family: OpenSans, Arial, sans-serif;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0;
-	box-sizing: border-box;
+  font-family: OpenSans, Arial, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -43,17 +71,16 @@ body {
 
 @media (min-width: 641px) and (max-width: 960px) {
 	.header {
-		background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/football_1280.jpg");
+	  background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/football_1280.jpg");
 	}
 }
 
 @media (max-width: 640px) {
 	.header {
-		background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/football_767.jpg");
+	  background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/football_767.jpg");
 	}
 }
 	
-
 .header::after {
   content: "";
   background-color: #0a0e34;
@@ -99,7 +126,6 @@ body {
 	margin-top: auto;
 	margin-bottom: auto;
 	width: 80%;
-
 }
 
 h1, .title span {
@@ -152,14 +178,12 @@ h1 {
 	margin-top: 10rem;
 	width: 50%;
 	margin-bottom: 5.5rem
-
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
 	.buttons {
 		width: 80%;
 	}
-
 	.button__app, .button__gg {
 		width: 35%;
 	}
@@ -176,7 +200,6 @@ h1 {
 	/*padding-top: 15px;
 	padding-bottom: 15px;*/
 	box-sizing: border-box;
-
 }
 
 .icon {
@@ -184,7 +207,6 @@ h1 {
 	width: 40px;
 	height: 50px;
 	align-self: center;
-	
 }
 
 .button_text {
@@ -197,6 +219,7 @@ h1 {
 @media (max-width: 640px) {
 	.button_text {
 		font-size: 8px;
+		margin: 8px;
 	}
 	.buttons {
 		flex-direction: column;
@@ -205,6 +228,8 @@ h1 {
 	}
 	.button__gg, .button__app {
 		width: 100%;
+		margin-bottom: 15px;
+		height: 35px;
 	}
 	.icon {
 		width: 23px;
@@ -261,8 +286,9 @@ h1 {
 		align-self: flex-start;
 	}
 	.athlets_pic {
-		width: 50%;
-		margin-right: auto;
+		position: absolute;
+		top: 2rem;
+		left: -2rem;
 	}
 	.athlets {
 		flex-direction: row;
@@ -292,7 +318,6 @@ ol {
 
 .connection {
 	background: #ffffff;
-	    
 }
 
 h3 {
@@ -349,7 +374,6 @@ p {
 	background-color: #efefef;
 }
 
-
 .players h2 {
 	align-self: flex-start;
 	font-size: 80px;
@@ -362,7 +386,6 @@ p {
 	margin-bottom: 0;
 	margin-left: 190px;
 }
-
 
 .players article {
 	width: 40%;
@@ -379,6 +402,28 @@ p {
 	.players article {
 		margin-left: 20px;
 		width: 50%;
+	}
+}
+
+@media (max-width: 640px) {
+	.athlets_pic {
+		margin-top: 4rem;
+	}
+	.athlets h2, .players h2 {
+		margin-top: 1rem;
+		position: absolute;
+		left: 1rem;
+		top: 0;
+		font-size: 50px;
+	}
+	h3 {
+		font-size: 23px;
+	}
+	p {
+		font-size: 15px;
+	}
+	li article {
+		margin: auto;
 	}
 }
 
@@ -399,6 +444,13 @@ p {
 	position: absolute;
 	width: 70%;
 	right: 0;
+}
+
+@media (max-width: 640px) {
+	.players_pic {
+		margin-top: 4rem;
+		position: relative;
+	}
 }
 
 .next_step {
@@ -435,6 +487,16 @@ p {
 	}
 }
 
+@media (max-width: 640px) {
+	.next_step {
+		flex-direction: column;
+	}
+	.be_active, .find_contact, .work_it {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
 .number {
 	font-size: 24px;
 	width: 8.5rem;
@@ -460,6 +522,16 @@ p {
 		left: 1.75rem;
 		margin-left: 0;
 	}
+}
+
+@media (max-width: 640px) {
+	.number {
+		font-size: 14px;
+		width: 3.5rem;
+		height: 3.5rem;
+		left: 4rem;
+		top: 11rem;
+	} 
 }
 
 .number span {
@@ -545,6 +617,27 @@ p {
 	}
 }
 
+@media (max-width: 640px) {
+	.be_active_pic, .find_contact_pic, .work_it_pic {
+	  width: 100%;
+	 }
+	.next_step h2 {
+	  font-size: 28px;	
+	  margin-top: 1.75rem;
+	}
+	.next_step p {
+		font-size: 16px;
+		margin-top: 1.3rem;
+		margin-bottom: 4rem;
+	}
+	.be_active article, .work_it article, .find_contact article {
+		width: 100%;
+    }
+    .find_contact_pic {
+		order: -1;
+	}
+}
+
 .footer {
 	display: flex;
 	flex-direction: column;
@@ -562,9 +655,15 @@ p {
 	color: white;
 }
 
-@media (min-width: 641px) and (max-width: 960px) {
+@media (min-width: 321px) and (max-width: 768px) {
 	.footer {
 		background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/game_1280.jpg");
+	}
+}
+
+@media (max-width: 320px) {
+	.footer {
+		background-image: url("https://raw.githubusercontent.com/SashaKostina/diplom/master/img/game_767.jpg");
 	}
 }
 
@@ -588,6 +687,7 @@ p {
 	align-items: center;
 	margin-top: auto;
 }
+
 @media (min-width: 641px) and (max-width: 960px) {
 	.footer_main {
 		margin-top: 6rem;
@@ -627,7 +727,21 @@ p {
     .footer p {
     	font-size: 36px;
     }
+}
 
+@media (max-width: 640px) {
+	.footer_main {
+		margin-top: 5rem;
+		flex-direction: column;
+	}
+	.logo {
+		width: 75px;
+		height: 75px;
+	}
+	.logo svg {
+		width: 58px;
+		height: 50px;
+	}
 }
 
 .footer h2 {
@@ -644,7 +758,6 @@ p {
 	margin-bottom: 1.3rem;
 }
 
-
 .footer p {
 	font-size: 30px;
 	color: #a496ca;
@@ -652,6 +765,15 @@ p {
 	font-weight: 400;
 	margin-top: 0;
 	text-align: center;
+}
+
+@media (max-width: 640px) {
+	.footer h2 {
+		font-size: 32px;
+	}
+	.footer p {
+		font-size: 14px;
+	}
 }
 
 .footer .logo__text {
